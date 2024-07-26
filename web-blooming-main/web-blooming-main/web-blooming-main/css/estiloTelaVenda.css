@@ -1,0 +1,430 @@
+/* CSS NAVBAR */
+:root {
+    /* --------------- CORES--------------- */
+    --color-body: #f9fbff;
+    --color-neutral: #ffff;
+    --color-neutral-10: #f6f6f6;
+    --color-neutral-20: #8888;
+    --color-neutral-30: #525252;
+    --color-neutral-40: #d9d9d9;
+    --color-font-price: #5d5d5d;
+    --color-red: #661c1c;
+    --color-tag-promo: #e55472;
+    --color-green: #259F5E;
+    --color-promo: #f6e6cc;
+}
+
+body {
+    background: url(img/Frame\ 1.jpg);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-body);
+    /* barra de rolagem */
+    /* overflow-y: scroll; */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------  HEADER ---------------  */
+header {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* ---------------  TOP NAVBAR ---------------*/
+.top-navbar {
+    background: var(--color-neutral-10);
+    height: 20%;
+    padding: 1%;
+    width: 100%;
+}
+
+/* --------------- NAVBAR --------------- */
+.navbar {
+    background: var(--color-neutral);
+}
+
+
+.navbar-container {
+    display: flex;
+}
+
+.logo {
+    color: var(--color-red);
+    letter-spacing: 0.1em;
+    margin-left: 28%;
+}
+
+.logo h1 {
+    font-family: 'Kreon', serif;
+}
+
+.bar-home {
+    border-bottom: 1px solid var(--color-font-price);
+    margin-top: 3%;
+    transform: rotate(90deg);
+    width: 3%;
+}
+
+/* --------------- SEARCH BOX --------------- */
+.search-box {
+    margin-left: 7%;
+}
+
+.search-bar {
+    background: var(--color-neutral);
+    border-radius: 15px;
+    margin: 1.3rem;
+    padding: 0.3rem;
+}
+
+.search-txt {
+    background: var(--color-neutral);
+    border-radius: 15px;
+    border: none;
+    color: var(--color-neutral-30);
+    font-size: 15px;
+    outline: none;
+    transition: 0.4s;
+    width: 0;
+}
+
+.search-btn {
+    color: var(--color-neutral-20);
+    font-size: 18px;
+}
+
+.search-bar:hover>.search-txt {
+    background: var(--color-neutral-10);
+    width: 210px;
+    padding: 0.3rem;
+}
+
+/* --------------- ITENS NAVBAR --------------- */
+.itens-nav {
+    color: var(--color-neutral-20);
+    font-size: 18px;
+    margin: 1.5rem;
+}
+
+.subtitle-nav {
+    font-size: 18px;
+    letter-spacing: 0.05rem;
+    margin-top: 0.5%;
+    text-transform: uppercase;
+    transform: translate(5px);
+}
+
+.itens-nav:hover {
+    transform: translateY(-5px);
+}
+
+/* CSS FOOTER */
+*/ .footer-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/* ------------- NEWSLETTER -------------  */
+.top-footer {
+    align-items: center;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    /*gabi*/
+    justify-content: center;
+    margin-top: 10%;
+    padding: 0.5rem;
+}
+
+.font-newsletter {
+    color: #8888;
+    font-size: 15px;
+}
+
+.newsLetter {
+    background: #d9d9d9;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    padding: 0.4rem;
+}
+
+.btn-form {
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+/* ------------- INFORMAÇÕES DO SITE -------------  */
+ul {
+    list-style: none;
+}
+
+.info-footer {
+    background: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem 0 3rem;
+    width: 100%;
+}
+
+.info-menu {
+    color: #8888;
+    margin-top: 5%;
+}
+
+.info-menu:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info-menu i {
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 4%;
+}
+
+.info-cards:hover {
+    cursor: pointer;
+}
+
+#cards {
+    width: 4rem;
+}
+
+#pix {
+    width: 2rem;
+    height: 2rem;
+}
+
+#boleto {
+    width: 2rem;
+    height: 2rem;
+}
+
+#mastercard {
+    width: 2.3rem;
+    margin-top: 4%;
+}
+
+/* ------------- INFORMAÇÕES DE LOCALIZAÇÃO -------------  */
+.footer-bottom {
+    background: #f6f6f6;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* CSS SIDEBAR FIXA */
+.sidebar-container {
+    background-color: #ffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 2%;
+    width: 20%;
+    /* gabi */
+    height: 550px;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding-top: 15px;
+    margin: 1rem;
+}
+
+.classePrincipal {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 950px;
+}
+
+
+/* DROPDOWN MENU */
+.dropbtn {
+    background-color: #ffff;
+    color: #53525288;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Estilo do menu dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 1em;
+}
+
+/* Estilo do conteúdo do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 2rem;
+    width: 150px;
+}
+
+.sidebar-list, a {
+    color: #5D5D5D;
+    display: inline-block;
+    font-size: 13px;
+}
+
+/* Estilo dos botões no dropdown */
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f1;
+}
+
+/* Mostra o conteúdo do dropdown quando o botão é clicado */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.telaAfazeres {
+    background-color: #ffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    margin-right: 150px;
+    /* margin-left: 50px; */
+    padding: 0.3rem;
+    height: 250px;
+}
+
+.telaAfazeres h6 {
+    padding-left: 0.8rem;
+    color: #525252;
+    font-weight: bold;
+}
+
+.tituloCatalogo {
+    /* text-align: center; */
+    margin-left: 43rem;
+    margin-top: -10rem;
+}
+
+.floresCatalogo {
+    margin-top: 3rem;
+}
+
+.flor1 {
+    display: inline-block;
+    margin-left: 25rem;
+    background-color: #ffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    height: 260px;
+}
+
+.flor2 {
+    display: inline-block;
+    margin-left: 10rem;
+    background-color: #ffff;
+    height: 260px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.botao1 {
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: rgb(109, 103, 103);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.botao2 {
+    background-color: #661C1C;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.botaoAdd {
+    margin-left: 43rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    color: var(--color-green);
+    background-color: #F9FBFF;
+    box-shadow: 2px 1px 4px 3px rgba(0, 0, 0, 0.25);
+    height: 90px;
+    width: 120px;
+    border-radius: 7px;
+    border: none;
+    font-size: 35px;
+}
+
+.tabelas1 table,
+.tabelas2 table {
+    color: #5D5D5D;
+    /* margin-right: 100px; */
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+telaAfazeres,
+td {
+    color: #259F5E;
+}
+
+telaAfazeres,
+th {
+    font-weight: normal;
+}
+
+.menu-itens {
+    margin-right: 1.3rem;
+}
+
+.seta {
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropbtn:hover .seta {
+    transform: rotate(270deg);
+}
